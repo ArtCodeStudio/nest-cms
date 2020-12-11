@@ -5,7 +5,7 @@ import { PageService } from './page.service';
 /**
  * Render pages like page.pug and page.other-template.pug
  */
-@Controller('page')
+@Controller('pages')
 export class PageController {
   constructor(protected global: GlobalService, protected page: PageService) {}
 
