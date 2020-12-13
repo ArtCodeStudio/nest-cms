@@ -18,6 +18,7 @@ const THEME: ThemeConfig = YAML.parse(
 export const app = {
   root: ROOT,
   port: Number(process.env.PORT) || 3000,
+  graphqlQueries: require("./gql"),
   environment:
     process.env.NODE_ENV === 'development' ? 'development' : 'production',
 };
